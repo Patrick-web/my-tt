@@ -1,15 +1,15 @@
 {
   "expo": {
-    "name": "tt-reader",
-    "slug": "tt-reader",
+    "name": "TimeTableX",
+    "slug": "TimeTableX",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "dark",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#000000"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -24,7 +24,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.justpatrick.timetablex"
     },
     "web": {
       "favicon": "./assets/favicon.png"
