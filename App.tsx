@@ -199,11 +199,12 @@ export default function App() {
 
   useEffect(()=>{
       AsyncStorage.getItem("allLessons").then(data=>{
-        const allLessons = data?new Map(JSON.parse(data)):null
-        if(allLessons){
-            setAllLessons(allLessons)
-        console.log("-=-Set+++")
-          }
+        const dbAllLessons: any = data?new Map(JSON.parse(data)):null
+        if(dbAllLessons){
+            setAllLessons(dbAllLessons)
+            setDayLessons(dbAllLessons.get(selectedDay).classes)
+            console.log("-=-Set+++")
+        }
         console.log("-=-===++++")
       })
       .catch((err)=>{
