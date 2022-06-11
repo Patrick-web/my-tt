@@ -5,7 +5,7 @@ import { LinearGradient } from 'expo-linear-gradient';
 export const AppHeader = ({selectedDay,activeDay} : {selectedDay: string,activeDay:string}) => {
   const windowHeight = Dimensions.get('window').height;
   const windowWidth = Dimensions.get('window').width;
-  const headerHeight = Math.trunc(windowHeight/1/3);
+  const headerHeight = Math.trunc(windowHeight/1/5);
   const [headerImage,setHeaderImage] = useState<string>("https://images.unsplash.com/photo-1651841366853-ef8c51dae31b?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=360&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY1Mzk5OTQ4NA&ixlib=rb-1.2.1&q=80&w=1028");
   const [headerImages,setHeaderImages] = useState<string[]>(["https://images.unsplash.com/photo-1651841366853-ef8c51dae31b?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=360&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY1Mzk5OTQ4NA&ixlib=rb-1.2.1&q=80&w=1028"])
   const [currentImageIndex,setCurrentImageIndex] = useState<number>(0);
